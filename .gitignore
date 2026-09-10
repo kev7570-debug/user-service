@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Environment variables (секреты!)
+.env
+
+# SQLite (локальные тестовые БД)
+*.sqlite3
+*.db
+
+# Ruff cache
+.ruff_cache/
+
+# pytest
+.pytest_cache/
+.coverage
+htmlcov/
+
+# PyCharm
+.idea/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db
