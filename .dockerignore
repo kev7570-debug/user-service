@@ -1,0 +1,42 @@
+# Git
+.git
+.gitignore
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Виртуальные окружения
+.venv/
+venv/
+env/
+
+# Переменные окружения (секреты!)
+.env
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# Локальные БД
+*.sqlite3
+*.db
+
+# Документы
+docs/
+*.md
+!README.md
+
+# GitHub
+.github/
+
+# Docker
+Dockerfile
+docker-compose.yml
+.dockerignore
