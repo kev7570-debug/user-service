@@ -3,7 +3,7 @@ from tortoise.models import Model
 
 
 class City(Model):
-    """Справочник городов (используется в PrivateUsersListHintMetaModel / CitiesHintModel)."""
+    """Справочник городов."""
 
     id = fields.IntField(primary_key=True)
     name = fields.CharField(max_length=255)

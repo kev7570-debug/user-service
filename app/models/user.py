@@ -5,8 +5,8 @@ from tortoise.models import Model
 class User(Model):
     """Основная модель пользователя.
 
-    Покрывает поля из CurrentUserResponseModel / PrivateDetailUserResponseModel /
-    PrivateCreateUserModel спецификации.
+    Хранит учётные данные, контактную информацию и роль пользователя.
+    Пароль сохраняется только в виде хеша (Argon2).
     """
 
     id = fields.IntField(primary_key=True)

@@ -7,9 +7,7 @@ class Session(Model):
 
     id = fields.IntField(primary_key=True)
     token_hash = fields.CharField(max_length=64, unique=True, db_index=True)
-    user = fields.ForeignKeyField(
-        "models.User", related_name="sessions", on_delete=fields.CASCADE
-    )
+    user = fields.ForeignKeyField("models.User", related_name="sessions", on_delete=fields.CASCADE)
     expires_at = fields.DatetimeField(db_index=True)
     created_at = fields.DatetimeField(auto_now_add=True)
 
